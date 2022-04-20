@@ -35,6 +35,7 @@ background-color: #000000;
 tw-sidebar {display: none;}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="INTRODUCTION" tags="begin" position="507,507" size="100,100">&#39;&#39;(if: $event is 1)[You have finished your last final exam, and you are sitting alone in your dorm with your belongings packed up.]
 (elseif: $event is 2)[Looking outside your window, you see the campus covered in heavy snow, and you start feeling winter blues.]
 (elseif: $event is 3)[Late at night and in the dark, you suddenly receive a notifcation from BlackBoard &quot;MATH161 Midterm Exam Grade Available. [[TAP NOTIFICATION-&gt;TAP NOTIFICATION]]]
+&lt;br&gt;
 Although you have managed to deal with the homesickness after not talking with your family for over a year, you suddenly feel a sense of nostalgia, a desire for union. As such, you have a sudden urge to find satisfaction in dealing with your feelings.&#39;&#39;
 &lt;br&gt;
 Now What?
@@ -71,15 +72,23 @@ Now What?
 Now What?
 [[PREPARE VEGETABLES-&gt;PREPARE INGREDIENTS AFTER PREHEAT PAN]]
 [[TURN OFF STOVE-&gt;TURN OFF STOVE]]</tw-passagedata><tw-passagedata pid="8" name="PREPARE INGREDIENTS" tags="" position="964,829" size="100,100">Cut Tomatoes
+&lt;img src=&quot;https://kevolxtion.github.io/twine/images/MVI_2714.gif&quot; style=&quot;width:50%&quot;&gt;
+&lt;br&gt;
 Marinate Beef Fillets
+&lt;img src=&quot;https://kevolxtion.github.io/twine/images/MVI_2719.gif&quot;
+style=&quot;width:50%&quot;&gt;
+&lt;br&gt;
 Beat Eggs
+&lt;img src=&quot;https://kevolxtion.github.io/twine/images/MVI_2723.gif&quot; style=&quot;width:50%&quot;&gt;
 &lt;br&gt;
 (if: $satisfaction is false)[Though, you feel like you forgot about the elephant in the room. Now What?]
 (if: $satisfaction is true)[Now What?]
 [[START COOKING-&gt;START COOKING BEFORE]]
-[[CALL HOME-&gt;CALL HOME]]</tw-passagedata><tw-passagedata pid="9" name="PREPARE INGREDIENTS AFTER PREHEAT PAN" tags="" position="738,981" size="100,100">You forgot about the heating pan, and the temperature of the oil continues to rise. Eventally, the oil in the pan starts to smoke and catches fire.
+[[CALL HOME-&gt;CALL HOME]]</tw-passagedata><tw-passagedata pid="9" name="PREPARE INGREDIENTS AFTER PREHEAT PAN" tags="" position="738,981" size="100,100">You forgot about the heating pan, and the temperature of the oil continues to rise. Eventally, the oil in the pan starts to smoke and catches fire, triggering the fire alarm.
 &lt;br&gt;
-[[PUT OUT FIRE AND CLEAN UP MESS-&gt;PLAN FAMILY DINNER]]</tw-passagedata><tw-passagedata pid="10" name="TURN OFF STOVE" tags="" position="889,978" size="100,100">You successfully prevented a grease fire.
+[[PUT OUT FIRE AND CLEAN UP MESS-&gt;PLAN FAMILY DINNER]]
+
+&lt;audio src=&quot;https://kevolxtion.github.io/twine/images/21368.m4a&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="10" name="TURN OFF STOVE" tags="" position="889,978" size="100,100">You successfully prevented a grease fire.
 &lt;br&gt;
 [[CONTINUE TO PREPARE VEGETABLES-&gt;PREPARE INGREDIENTS]]</tw-passagedata><tw-passagedata pid="11" name="CALL HOME" tags="" position="1127,763" size="100,100">Your heart races as you FaceTime your parents for the first time in weeks. Suddenly, they pick up, and you feel a sense of relief, a sense of achievement as you finally crossed an emotional barrier you constructed all by yourself.
 (set: $satisfaction to true)
@@ -97,27 +106,32 @@ Preheat Pan
 Add Mixed Egg Yolks
 Stir Fry Mixed Egg Yolks
 Remove Stir Fried Eggs
+&lt;img src=&quot;https://kevolxtion.github.io/twine/images/MVI_2729.gif&quot; style=&quot;width:50%&quot;&gt;
 &lt;br&gt;
 Add Marinated Beef Fillets
 Stir Fry Marinated Beef Fillets
 Remove Stir Fried Marinated Beef Fillets
+&lt;img src=&quot;https://kevolxtion.github.io/twine/images/MVI_2731.gif&quot; style=&quot;width:50%&quot;&gt;
 &lt;br&gt;
 Add Tomatoes
 Stir Fry Tomatoes
+&lt;img src=&quot;https://kevolxtion.github.io/twine/images/MVI_2734.gif&quot; style=&quot;width:50%&quot;&gt;
+&lt;br&gt;
 Add Stir Fried Eggs
 Add Stir Fried Marinated Beef Fillets
 Add Seasoning
 Cook Until Tomato Juice Are Released
+&lt;img src=&quot;https://kevolxtion.github.io/twine/images/MVI_2737.gif&quot; style=&quot;width:50%&quot;&gt;
 &lt;br&gt;
 *knock knock*
 &lt;br&gt;
-[[OPEN DOOR-&gt;OPEN DOOR]]</tw-passagedata><tw-passagedata pid="15" name="OPEN DOOR" tags="" position="1266,1102" size="100,100">Your family arrives, and you set the table for a wholesome, long-awaited family dinner. :)
+[[OPEN DOOR-&gt;OPEN DOOR]]
+
+&lt;audio src=&quot;https://kevolxtion.github.io/twine/images/MVI_2730.m4a&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="15" name="OPEN DOOR" tags="" position="1266,1102" size="100,100">Your family arrives, and you set the table for a wholesome, long-awaited family dinner. :)
+&lt;br&gt;
+&lt;img src=&quot;https://kevolxtion.github.io/twine/images/MVI_2747.gif&quot; style=&quot;width:50%&quot;&gt;
 &lt;br&gt;
 //&#39;&#39;THE END&#39;&#39;//
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
 [[EXPLORE AGAIN-&gt;INTRODUCTION]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
