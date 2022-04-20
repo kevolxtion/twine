@@ -9,24 +9,116 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play reunion.</tw-noscript></noscript></tw-story>
-<tw-storydata name="reunion" startnode="1" creator="Twine" creator-version="2.3.16" ifid="9FF0BEA0-47BA-42DF-9E62-5D59987ED343" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story {
-background-color: #172774;
-color: #EEEEEE;
+<tw-storydata name="reunion" startnode="1" creator="Twine" creator-version="2.3.16" ifid="9FF0BEA0-47BA-42DF-9E62-5D59987ED343" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story
+{
+background-image: url("https://kevolxtion.github.io/twine/images/7.png");
+background-repeat: no-repeat;
+background-size: cover;
+color: #FFFFFF;
 font-family: 'PT Sans Caption', sans-serif; font-size: 1.1em;
 }
- tw-link, .enchantment-link { color: #FF0075;
-}
-.visited {
-color: #FF0075;
-}
- tw-story[tags~="begin"] {
-background-image: url("https://nilsontcarroll.github.io/twine/images/wall.gif");
+
+tw-link, .enchantment-link {color: #FF6D70;}
+
+.visited{color: #004680;}
+
+tw-story[tags~="begin"] {
+background-image: url("https://kevolxtion.github.io/twine/images/6.png");
 background-repeat: no-repeat;
-background-size:cover; }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="begin" position="506,506.5" size="100,100">Hello
-[[Add Vegetable Oil-&gt;Next Step]]
-&lt;img src=&quot;https://kevolxtion.github.io/twine/images/2.png&quot; style=&quot;width:50%&quot;&gt;</tw-passagedata><tw-passagedata pid="2" name="Next Step" tags="" position="506,656.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="3" name="startup" tags="startup" position="830,711" size="100,100">{
+background-size: cover;
+}
+
+tw-story[tags~="end"] {
+background-color: #000000;
+}
+
+tw-sidebar {display: none;}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="INTRODUCTION" tags="begin" position="507,507" size="100,100">&#39;&#39;(if: $event is 1)[You have finished your last final exam, and you are sitting alone in your dorm with your belongings packed up.]
+(elseif: $event is 2)[Looking outside your window, you see the campus covered in heavy snow, and you start feeling winter blues.]
+(elseif: $event is 3)[Late at night and in the dark, you suddenly receive a notifcation from BlackBoard &quot;MATH161 Midterm Exam Grade Available. [[TAP NOTIFICATION-&gt;TAP NOTIFICATION]]]
+Although you have managed to deal with the homesickness after not talking with your family for over a year, you suddenly feel a sense of nostalgia, a desire for union. As such, you have a sudden urge to find satisfaction in dealing with your feelings.&#39;&#39;
+&lt;br&gt;
+Now What?
+(t8n-depart:&quot;shudder&quot;)+(t8n-arrive:&quot;shudder&quot;)[[BURY YOUR FEELINGS-&gt;BURY YOUR FEELINGS]]
+(t8n-depart:&quot;pulse&quot;)+(t8n-arrive:&quot;pulse&quot;)[[FACETIME YOUR PARENTS-&gt;FACETIME YOUR PARENTS]]
+(t8n-depart:&quot;flicker&quot;)+(t8n-arrive:&quot;flicker&quot;)[[PLAN FAMILY DINNER-&gt;PLAN FAMILY DINNER]]</tw-passagedata><tw-passagedata pid="2" name="startup" tags="startup" position="132,655" size="100,100">{
 (set: $event to (random: 1, 3))
-}</tw-passagedata></tw-storydata>
+}
+{
+(set: $satisfaction to false)
+}</tw-passagedata><tw-passagedata pid="3" name="BURY YOUR FEELINGS" tags="end" position="330,671" size="100,100">After a second,
+you suddenly burst into tears.
+
+[[WIPE YOUR TEARS-&gt;INTRODUCTION]]</tw-passagedata><tw-passagedata pid="4" name="FACETIME YOUR PARENTS" tags="end" position="653,678" size="100,100">Although you are slightly relieved of your homesickness,
+you still feel like something is missing.
+
+[[CONTINUE SEARCHING-&gt;INTRODUCTION]]</tw-passagedata><tw-passagedata pid="5" name="PLAN FAMILY DINNER" tags="" position="889,679" size="100,100">The thought of reuniting with your family over dinner excites you. Looking at your ingredients, you see the possibility of making stir fried tomato egg beef.
+&lt;br&gt;
+Now What?
+[[I CANNOT-&gt;I CANNOT]]
+[[PREHEAT PAN-&gt;PREHEAT PAN BEFORE]]
+[[PREPARE INGREDIENTS-&gt;PREPARE INGREDIENTS]]
+[[CALL HOME-&gt;CALL HOME]]
+&lt;br&gt;
+&lt;img src=&quot;https://kevolxtion.github.io/twine/images/8.png&quot; style=&quot;width:50%&quot;&gt;</tw-passagedata><tw-passagedata pid="6" name="TAP NOTIFICATION" tags="end" position="497,667" size="100,100">&#39;&#39;YOU FAILED&#39;&#39;
+
+//&#39;&#39;GRADE&#39;&#39;//&lt;br&gt;54
+//&#39;&#39;MEAN&#39;&#39;//&lt;br&gt;93
+//&#39;&#39;MEDIAN&#39;&#39;//&lt;br&gt;90
+//&#39;&#39;RANGE&#39;&#39;//&lt;br&gt;54 to 100
+
+[[DISMISS NOTIFICATION-&gt;INTRODUCTION]]</tw-passagedata><tw-passagedata pid="7" name="PREHEAT PAN BEFORE" tags="" position="814,828" size="100,100">You add vegetable oil to the heating pan. Then, you suddenly realize that you forgot to prepare the ingredients.
+&lt;br&gt;
+Now What?
+[[PREPARE VEGETABLES-&gt;PREPARE INGREDIENTS AFTER PREHEAT PAN]]
+[[TURN OFF STOVE-&gt;TURN OFF STOVE]]</tw-passagedata><tw-passagedata pid="8" name="PREPARE INGREDIENTS" tags="" position="964,829" size="100,100">Cut Tomatoes
+Marinate Beef Fillets
+Beat Eggs
+&lt;br&gt;
+(if: $satisfaction is false)[Though, you feel like you forgot about the elephant in the room. Now What?]
+(if: $satisfaction is true)[Now What?]
+[[START COOKING-&gt;START COOKING BEFORE]]
+[[CALL HOME-&gt;CALL HOME]]</tw-passagedata><tw-passagedata pid="9" name="PREPARE INGREDIENTS AFTER PREHEAT PAN" tags="" position="738,981" size="100,100">You forgot about the heating pan, and the temperature of the oil continues to rise. Eventally, the oil in the pan starts to smoke and catches fire.
+&lt;br&gt;
+[[PUT OUT FIRE AND CLEAN UP MESS-&gt;PLAN FAMILY DINNER]]</tw-passagedata><tw-passagedata pid="10" name="TURN OFF STOVE" tags="" position="889,978" size="100,100">You successfully prevented a grease fire.
+&lt;br&gt;
+[[CONTINUE TO PREPARE VEGETABLES-&gt;PREPARE INGREDIENTS]]</tw-passagedata><tw-passagedata pid="11" name="CALL HOME" tags="" position="1127,763" size="100,100">Your heart races as you FaceTime your parents for the first time in weeks. Suddenly, they pick up, and you feel a sense of relief, a sense of achievement as you finally crossed an emotional barrier you constructed all by yourself.
+(set: $satisfaction to true)
+&#39;&#39;You found your sense of satisfaction in dealing with your feelings.&#39;&#39;
+&lt;br&gt;
+[[PREPARE INGREDIENTS AND START COOKING-&gt;START COOKING AFTER]]</tw-passagedata><tw-passagedata pid="12" name="I CANNOT" tags="" position="764,453" size="100,100">You feel overwhelmed by the endless outcomes that might happen. Instead of dealing with your feelings, you feel safer keeping the things the way they are.
+&lt;br&gt;
+[[IGNORE FEELINGS AND FAST FORWARD TO THE END OF NEXT SEMESTER-&gt;INTRODUCTION]]
+[[BUILD COURAGE TO CHANGE HOW THINGS ARE-&gt;PLAN FAMILY DINNER]]</tw-passagedata><tw-passagedata pid="13" name="START COOKING BEFORE" tags="" position="1093,992" size="100,100">Even though the food is ready to go, you realized that you forgot the purpose for cooking today—for reunion.
+&lt;br&gt;
+[[I CANNOT-&gt;I CANNOT]]
+[[CALL HOME-&gt;CALL HOME]]</tw-passagedata><tw-passagedata pid="14" name="START COOKING AFTER" tags="" position="1266,952" size="100,100">Add Vegetable Oil
+Preheat Pan
+&lt;br&gt;
+Add Mixed Egg Yolks
+Stir Fry Mixed Egg Yolks
+Remove Stir Fried Eggs
+&lt;br&gt;
+Add Marinated Beef Fillets
+Stir Fry Marinated Beef Fillets
+Remove Stir Fried Marinated Beef Fillets
+&lt;br&gt;
+Add Tomatoes
+Stir Fry Tomatoes
+Add Stir Fried Eggs
+Add Stir Fried Marinated Beef Fillets
+Add Seasoning
+Cook Until Tomato Juice Are Released
+&lt;br&gt;
+*knock knock*
+&lt;br&gt;
+[[OPEN DOOR-&gt;OPEN DOOR]]</tw-passagedata><tw-passagedata pid="15" name="OPEN DOOR" tags="" position="1266,1102" size="100,100">Your family arrives, and you set the table for a wholesome, long-awaited family dinner. :)
+&lt;br&gt;
+//&#39;&#39;THE END&#39;&#39;//
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+[[EXPLORE AGAIN-&gt;INTRODUCTION]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
